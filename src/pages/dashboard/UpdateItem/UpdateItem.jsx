@@ -9,7 +9,7 @@ const image_hosting_key = import.meta.env.VITE_IMAGE_HOSTING_KEY;
 
 const UpdateItem = () => {
     const { name, category, recipe, price, _id } = useLoaderData();
-    const { register, handleSubmit, reset } = useForm();
+    const { register, handleSubmit, } = useForm();
     const axiosPublic = useAxiosPublic();
     const axiosSecure = useAxiosSecure();
 
